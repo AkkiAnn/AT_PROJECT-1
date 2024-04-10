@@ -14,12 +14,15 @@ class Add_employe:
         super().__int__(driver)
         self.driver = driver
 
+# Click PIM Module in Left side Menu.
     def click_pim(self):
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(By.LINK_TEXT, OHRM_Data.pim_menubutton_lt )).click()
 
+# Click Add button after clicking PIM Module.
     def click_ad_button(self):
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(By.LINK_TEXT, OHRM_Data.pim_addbutton_lt )).click()
 
+# Click Add profile
     def ad_profile_snap(self, img_path):
         click_add= WebDriverWait(self.driver, 15).until( EC.presence_of_element_located(By.XPATH, OHRM_Data.add_profile_pic_x)).click()
         click_add.send_keys(os.path.abspath(img_path))

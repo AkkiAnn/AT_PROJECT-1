@@ -9,7 +9,7 @@ class Delete_employe:
         super().__int__(driver)
         self.driver = driver
 
-    # Tests Deleting Employee.
+    # Method fot Tests Deleting Employee.
     def delete_emp(self, search_id):
 
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(By.XPATH, OHRM_Data.search_emp_id_x)).send_keys(search_id)

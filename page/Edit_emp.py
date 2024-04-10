@@ -9,6 +9,7 @@ class Edit_employe:
         super().__int__(driver)
         self.driver = driver
 
+# Method for tests Editing Employee.
     def edit_emp(self, search_id, lst_name, empl_id):
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(By.XPATH, OHRM_Data.search_emp_id_x)).send_keys(search_id)
 

@@ -14,6 +14,8 @@ class OHRM_Data:
     add_lname_n ="lastName"
     em_id_x='//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input'
     save_button_a_lt=" Save "
+
+# After entering the Personal Details page
     other_id_x = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[1]/div[2]/div/div[2]/input'
     drive_lic_no_x='//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[2]/div[1]/div/div[2]/input'
     calender_licnese_x = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[2]/div[2]/div/div[2]/div/div/input'
@@ -27,6 +29,7 @@ class OHRM_Data:
     test_field_x= '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[2]/div/form/div[1]/div/div[2]/div/div[2]/input'
     save_button_c_lt=" Save "
 
+# PIM Module Locators for Search option [ Edit and Delete employee]
     search_emp_id_x= '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/input'
     search_button_lt=" Search "
 
@@ -34,6 +37,7 @@ class OHRM_Data:
     delete_button_x= '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div/div/div[9]/div/button[1]'
     yes_delete_lt= " Yes, Delete "
 
+# Add Profile Picture
     add_profile_pic_x= '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[1]/div/div[2]/div/button'
 
 # Logout Locators

@@ -25,6 +25,7 @@ class EXL:
         sheet.cell(rownum, columnno).value = data
         workbook.save(file)
 
+    # Get the Data from the Excel file for Adding operation.
     def including_data(self, xl_file, sheet1):
         add = []
         first_name = EXL.readData(xl_file, sheet1, 4, 4)
@@ -42,6 +43,7 @@ class EXL:
         ad.append(add)
         return add
 
+    # Get the Data from the Excel file for Editing operation.
     def editing_datas(self, exl_file_path, sheet2):
         edit = []
         search_id= EXL.readData(exl_file_path, sheet2, 5, 7)

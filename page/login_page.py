@@ -8,7 +8,7 @@ class Login:
     def __init__(self, driver):
         self.driver = driver
 
-    # Login operation enter the orange-hrm-site
+    # Login operation with Username and Password.
     def login(self, username, password):
 
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(By.NAME, OHRM_Data.username_login_n)).send_keys(username)
